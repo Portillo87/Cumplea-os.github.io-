@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>🎂✨ ¡Feliz Cumpleaños Josselin! ✨🎂</title>
+  <meta name="description" content="Dedicatoria de cumpleaños con diseño profesional, fotos en corazones completos con borde de color y confeti con corazones." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --rose:#ff5ea8; --lila:#6c63ff; --gold:#fbbf24; --bg:#0b1020; --ink:#e5e7eb; --muted:#cbd5e1;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Poppins",sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden;}
+
+    .hero{text-align:center;padding:72px 18px 90px;position:relative;}
+    .hero h1{font-family:"Pacifico",cursive;font-size:clamp(34px,8.5vw,60px);margin-top:14px;
+      background:linear-gradient(90deg,#fff,#ffe8a3 30%,#ffd2f2 60%,#fff);-webkit-background-clip:text;background-clip:text;color:transparent;}
+    .hero p{margin-top:10px;font-size:clamp(15px,3.8vw,20px);color:var(--muted)}
+
+    .card{margin:-54px auto 40px;max-width:880px;padding:0 18px;}
+    .glass{background:linear-gradient(180deg,#ffffff10,#ffffff05);border:1px solid #ffffff22;backdrop-filter:blur(10px);
+      border-radius:26px;padding:clamp(20px,5vw,44px);box-shadow:0 30px 80px #0006;text-align:center;line-height:1.8;}
+    .glass h2{font-size:clamp(22px,6vw,28px);margin-bottom:14px;color:#ffeef7}
+    .glass p{font-size:clamp(14px,4vw,18px);color:#f3f4f6}
+    .signature{margin-top:16px;font-weight:800;letter-spacing:.3px;color:#ffd3f6}
+
+    .photos{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin:28px auto;}
+    .heart-svg{width:220px;height:220px;filter:drop-shadow(0 10px 24px rgba(0,0,0,.55));}
+@media (max-width:540px){.heart-svg{width:170px;height:170px}}
+
+
+    @keyframes pulse{
+      0%,100%{transform:scale(1); box-shadow:0 0 20px rgba(255,94,168,.6)}
+      50%{transform:scale(1.05); box-shadow:0 0 40px rgba(108,99,255,.8)}
+    }
+
+    .controls{text-align:center;margin-top:20px;}
+    .btn{appearance:none;border:0;padding:13px 18px;border-radius:14px;cursor:pointer;font-weight:800;letter-spacing:.3px;color:#0b1020;
+      background:linear-gradient(135deg,#ffd2f2,#fff);box-shadow:0 12px 30px #0006;border:1px solid #ffffff90;transition:transform .15s ease,box-shadow .15s ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 16px 38px #0007}
+
+    footer{text-align:center;padding:24px;color:#c7d2fe;font-size:13px}
+
+    @media print{#confetti-canvas,.controls{display:none!important}.glass{background:#fff;color:#111;backdrop-filter:none;border:0;box-shadow:none}}
+  </style>
+</head>
+<body>
+  <canvas id="confetti-canvas" style="position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:10"></canvas>
+
+  <section class="hero">
+    <h1>¡Feliz 19 cumpleaños, Josselin! 🎉</h1>
+    <p>Un día para aplaudir tu historia, tus sueños y lo increíble que viene ✨</p>
+  </section>
+
+  <section class="card">
+    <div class="glass">
+      <h2>Dedicatoria</h2>
+      <p>
+        Josselin, que este año 19 te encuentre rodeada de abrazos y de nuevas primeras veces: risas que te duelan la panza, caminos que te lleven a lo que sueñas y atardeceres tan hermosos como el de esta foto.
+      </p>
+      <p>
+        Que nunca te falten motivos para sonreír ni personas que te quieran ver brillar. Hoy deseo contigo que cada anhelo encuentre su momento perfecto para cumplirse.
+      </p>
+      <div class="photos">
+        <!-- Corazón 1 -->
+        <svg class="heart-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Foto corazón playa">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ff5ea8"/>
+              <stop offset="50%" stop-color="#6c63ff"/>
+              <stop offset="100%" stop-color="#fbbf24"/>
+            </linearGradient>
+            <clipPath id="heartClip1">
+              <path d="M50 88 C35 75,12 60,12 38 C12 24,23 13,37 13 c7 0,13 3,17 8 c4-5,10-8,17-8 c14 0,25 11,25 25 c0 22-23 37-38 50 z"/>
+            </clipPath>
+          </defs>
+          <image href="img.fotos/pic1.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid slice" clip-path="url(#heartClip1)"/>
+          <path d="M50 88 C35 75,12 60,12 38 C12 24,23 13,37 13 c7 0,13 3,17 8 c4-5,10-8,17-8 c14 0,25 11,25 25 c0 22-23 37-38 50 z" fill="none" stroke="url(#g1)" stroke-width="2.8"/>
+        </svg>
+        <!-- Corazón 2 -->
+        <svg class="heart-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Foto corazón retrato">
+          <defs>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ff5ea8"/>
+              <stop offset="50%" stop-color="#6c63ff"/>
+              <stop offset="100%" stop-color="#fbbf24"/>
+            </linearGradient>
+            <clipPath id="heartClip2">
+              <path d="M50 88 C35 75,12 60,12 38 C12 24,23 13,37 13 c7 0,13 3,17 8 c4-5,10-8,17-8 c14 0,25 11,25 25 c0 22-23 37-38 50 z"/>
+            </clipPath>
+            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="7" stdDeviation="4" flood-color="#000" flood-opacity="0.45"/>
+            </filter>
+          </defs>
+          <g filter="url(#shadow)">
+            <image href="img.fotos/pic2.jpg" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid slice" clip-path="url(#heartClip2)"/>
+            <path d="M50 88 C35 75,12 60,12 38 C12 24,23 13,37 13 c7 0,13 3,17 8 c4-5,10-8,17-8 c14 0,25 11,25 25 c0 22-23 37-38 50 z" fill="none" stroke="url(#g2)" stroke-width="2.8"/>
+          </g>
+        </svg>
+      </div>
+
+      </div>
+      <p class="signature">Con todo mi cariño, Ing. Will • <span id="fecha"></span></p>
+      <div class="controls">
+        <button class="btn" id="btn-confetti">🎉 Lluvia de confeti y corazones</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>Hecho con ❤️ para sorprenderte de verdad. Disfruta tu día, Josselin.</footer>
+
+  <script>
+    document.getElementById('fecha').textContent=new Date().toLocaleDateString('es-SV');
+
+    const canvas=document.getElementById('confetti-canvas');
+    const ctx=canvas.getContext('2d');
+    function resize(){canvas.width=innerWidth;canvas.height=innerHeight}resize();addEventListener('resize',resize);
+    const COLORS=['#ffd166','#a0e7e5','#bdb2ff','#caffbf','#fcb0f5','#ff9ac0','#ff6b6b'];
+
+    function makeParticles(n=340){return Array.from({length:n},()=>({x:Math.random()*canvas.width,y:-20-Math.random()*canvas.height,s:Math.random()<0.35?14+Math.random()*16:6+Math.random()*7,vx:(Math.random()-.5)*1.1,vy:1.2+Math.random()*2.8,rot:Math.random()*Math.PI*2,vr:(Math.random()>.5?1:-1)*(0.02+Math.random()*0.06),color:COLORS[(Math.random()*COLORS.length)|0],heart:Math.random()<0.42}));}
+
+    let parts=[],anim=false;
+    function heartPath(s){const k=s/16;ctx.beginPath();ctx.moveTo(0,-6*k);ctx.bezierCurveTo(6*k,-12*k,16*k,-2*k,0,10*k);ctx.bezierCurveTo(-16*k,-2*k,-6*k,-12*k,0,-6*k);ctx.closePath();}
+    function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);for(const p of parts){p.x+=p.vx;p.y+=p.vy;p.rot+=p.vr;if(p.y>canvas.height+24){p.y=-24;p.x=Math.random()*canvas.width;}ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.fillStyle=p.color;if(p.heart){heartPath(p.s*1.4);ctx.fill();}else{ctx.fillRect(-p.s/2,-p.s/2,p.s,p.s);}ctx.restore();}}
+    function loop(){if(!anim)return;requestAnimationFrame(loop);draw();}
+    function launch(n=360){parts=makeParticles(n);anim=true;loop();setTimeout(()=>{anim=false;ctx.clearRect(0,0,canvas.width,canvas.height);},6500);}
+    document.getElementById('btn-confetti').addEventListener('click',()=>launch());
+    setTimeout(()=>launch(260),900);
+  </script>
+</body>
+</html>
